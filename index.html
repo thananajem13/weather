@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/aeb658a71a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    ">
+
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <!-- header section -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo2x.png" class="logo-img d-inline-block" alt="">
+        <div class="logo-type d-inline-block">
+          <h1 class="site-title text-white">Weather</h1>
+          <p class="site-description d-block">tagline goes here</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active text-white d-inline-block" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-white d-inline-block" href="#">News</a>
+          <a class="nav-link text-white d-inline-block" href="#">Live cameras</a>
+          <a class="nav-link text-white d-inline-block" href="#">Photos</a>
+          <a class="nav-link text-white d-inline-block" href="#">Contact</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- search section -->
+  <div class="search">
+    <div class="container">
+      <form class="findLocation position-relative">
+        <input type="text" placeholder="Find your location..." id="search" class="w-100 d-inline-block form-control">
+        <input type="button" value="Find" id="submit" class="position-absolute btn rounded-pill text-white">
+      </form>
+    </div>
+  </div>
+  <!-- forecast section -->
+  <div class="today forecast2">
+    <!-- <div class="container">
+      <div class="row forecast-row">
+        <div class="col-md-4 ps-0 pe-0">
+          <div class="card border-0">
+            <div class="card-header ch1">
+              <div class="dateDetails d-flex justify-content-between">
+                <p class="day d-inline-block"></p>
+                <p class="date d-inline-block"></p>
+              </div>
+            </div>
+            <div class="card-body cb1 text-start">
+              <h5 class="card-title cityName">city name</h5>
+              <div class="degree text-white">
+                <p class="degree-num">25 ْC </p>
+                <img class="degree-img" src="">
+              </div>
+
+              <p class="cloudy">partly cloudy</p>
+              <div class="otherDetails">
+                <span>
+                  <img src="images/icon-umberella.png" alt="">
+                  humidity%
+                </span>
+                <span>
+                  <img src="images/icon-wind.png" alt="">
+                  wind speed km/h
+                </span>
+                <span>
+                  <img src="images/compass.png" alt="">
+                  compass
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ps-0 pe-0">
+          <div class="card border-0">
+            <div class="card-header ch2">
+              <div class="dateDetails">
+                <p class="tommorow text-center"></p>
+              </div>
+            </div>
+            <div class="card-body cb2 forecast-content text-center">
+              <img src="" class="forecast-icon" alt="">
+              <h5 class="card-title text-white tommorowDayTemp">temp on day ْC</h5>
+              <p class="card-text tommorowNightTemp text-white">temp on night ْ</p> 
+              <p class="cloudy">Sunny</p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-4 ps-0 pe-0">
+          <div class="card border-0 h-100">
+            <div class="card-header ch3">
+              <div class="dateDetails">
+                <p class="afterTommorw text-center"></p>
+              </div>
+            </div>
+            <div class="card-body cb3 forecast-content text-center">
+              <img src="" class="forecast-icon" alt="">
+              <h5 class="card-title text-white tommorowDayTemp">temp on day ْC</h5>
+              <p class="card-text tommorowNightTemp text-white">temp on night ْ</p> 
+              <p class="cloudy">Sunny</p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> -->
+
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-8">
+          <div class="search s2 contact">
+            <div class="container">
+              <form class="findLocation position-relative">
+                <input type="text" placeholder="Enter your email to subscribe..." id="search"
+                  class="w-100 d-inline-block form-control text-white">
+                <input type="button" value="Subscribe" id="submit"
+                  class="position-absolute btn rounded-pill text-white">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-100">
+          <div class="social-links row">
+            <a href="#"
+              class="text-center rounded-circle d-flex justify-content-center align-items-center text-decoration-none"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"
+              class="text-center rounded-circle d-flex justify-content-center align-items-center text-decoration-none"><i
+                class="fa-brands fa-twitter"></i></a>
+            <a href="#"
+              class="text-center rounded-circle d-flex justify-content-center align-items-center text-decoration-none"><i
+                class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#"
+              class="text-center rounded-circle d-flex justify-content-center align-items-center text-decoration-none"><i
+                class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
